@@ -1,0 +1,26 @@
+.aa{
+	background:pink;
+	text-align: center;
+	&:hover{
+		background:red;
+	}
+}
+.main{
+	padding:0;
+}
+.box1{
+	height:550px;
+	background:pink;
+}
+.box2{
+	height:550px;
+	background:red;
+}
+@media (max-width: 992px){
+    .container{
+        width:100%;
+	}
+	.box1,.box2{
+		height:350px;
+	}
+}

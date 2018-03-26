@@ -1,0 +1,16 @@
+.nav-wrap{
+    height:210px;
+    background: #1e2335;
+    color:#fff;
+    text-align: center;
+    line-height: 210px;
+}
+.content{
+    width:100%;
+}
+@media (max-width: 992px){
+    .nav-wrap{
+        height:80px;
+        line-height: 80px;
+    }
+}
