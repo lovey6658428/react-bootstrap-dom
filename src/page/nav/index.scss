@@ -3,6 +3,7 @@
     width: 1197px;
     margin:0 auto;
     line-height: 118px;
+    overflow: hidden;
     // height:118px;
     .nav-logo{
         margin:0 auto;
@@ -22,6 +23,8 @@
     background: #223668;
 }
 .nav-search{
+    overflow: hidden;
+    text-align: center;
     .cut{
         width: 40px;
         height: 46px;
@@ -43,6 +46,7 @@
             line-height:86px;
             border:none;
             margin-left: 10px;
+            padding-left: 20px;
         }
         input{
             width: 527px;
@@ -68,4 +72,106 @@
             margin-left: 20px;
         }
     }
+}
+@media screen and (max-width:768px) {
+    .nav-search .search{
+        input{
+            width: 327px;
+            background:#1d2e59;
+            height:46px;
+            line-height: 46px;
+            border:none;
+            color:#fff;
+            font-size: 20px;
+            padding:0 20px;
+            vertical-align: middle;
+        }
+    }
+    .nav-wrap{
+        width: 100%;
+        margin:0 auto;
+        line-height: 58px;
+        // height:118px;
+        .nav-logo{
+            margin:0 auto;
+            height:58px;
+            line-height: 58px;
+            text-align:center;
+        }
+    }
+
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    .nav-search .search{
+        input{
+            width: 427px;
+            background:#1d2e59;
+            height:46px;
+            line-height: 46px;
+            border:none;
+            color:#fff;
+            font-size: 20px;
+            padding:0 20px;
+            vertical-align: middle;
+        }
+    }
+    .nav-wrap{
+        width: 100%;
+        margin:0 auto;
+        line-height: 58px;
+        // height:118px;
+        .nav-logo{
+            margin:0 auto;
+            height:58px;
+            line-height: 58px;
+            text-align:center;
+        }
+    }
+}
+
+.menu-content{
+    width: 1197px;
+    margin: 0 auto;
+    line-height: 64px;
+    overflow: hidden;
+    position: relative;
+    .menu-list{
+        display: inline-block;
+        color: #fff;
+        font-size: 18px;
+        vertical-align: middle;
+        padding:0;
+        .menu-item{
+            display: inline-block;
+            margin-right: 50px;
+            cursor: pointer;
+            a{
+                color:#fff;
+                &:after{
+                    width: 80px;
+                    height: 4px;
+                    background: #7fc7ff;
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:769px){
+.menu-content{
+    width:auto;
+    font-style: 14px;
+    line-height:30px;
+    .menu-list{
+        font-size: 14px;
+        .menu-item{
+            margin-right: 25px;
+        }
+    }
+}
 }
